@@ -10,28 +10,46 @@ import SwiftUI
 import AppKit
 
 struct ContentView: View {
+    // Rectangle settings
+    private let rectOpacity = 0.07
+    private let rectCornerRadius: CGFloat = 15.0
+    
+    // Window settings
+    private let windowWidth: CGFloat = 360.0
+    private let windowHeight: CGFloat = 360.0
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text("Make\nEpic\nThings")
-                .font(Font.system(size: 34.0))
-                .fontWeight(.semibold)
-                .multilineTextAlignment(.leading)
-                .padding(.horizontal, 16.0)
-                .padding(.vertical, 12.0)
-                .frame(width: 360.0, height: 320.0, alignment: .topLeading)
-            Button(action: {
-                NSApplication.shared.terminate(self)
-            })
-            {
-                Text("Quit App")
-                .font(.caption)
-                .fontWeight(.semibold)
+            HStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
+                        .fill(Color.gray.opacity(rectOpacity))
+                        .lineSpacing(2)
+                        .padding(10)
+                    
+                    Text("content for R1")
+                }
+                
+                ZStack {
+                    RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
+                        .fill(Color.gray.opacity(rectOpacity))
+                        .lineSpacing(2)
+                        .padding(10)
+                    
+                    Text("content for R2")
+                }
             }
-            .padding(.trailing, 16.0)
-            .frame(width: 360.0, alignment: .trailing)
+            
+            HStack {
+                Text("btw. thank me later!")
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+                    .italic()
+            }
+            .frame(width: self.windowWidth, alignment: .center)
         }
         .padding(0)
-        .frame(width: 360.0, height: 360.0, alignment: .top)
+        .frame(width: self.windowWidth, height: self.windowHeight, alignment: .top)
     }
 }
 
