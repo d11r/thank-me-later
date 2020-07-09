@@ -8,7 +8,6 @@
 
 import AppKit
 
-class MainViewController: NSViewController
-{
+class MainViewController: NSViewController {
     
 }

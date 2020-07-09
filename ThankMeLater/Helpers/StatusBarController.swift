@@ -8,16 +8,14 @@
 
 import AppKit
 
-class StatusBarController
-{
+class StatusBarController {
     private var statusBar: NSStatusBar
     private var statusItem: NSStatusItem
     private var popover: NSPopover
     private var statusBarButton: NSStatusBarButton
     private var eventMonitor: EventMonitor?
     
-    init(_ popover: NSPopover)
-    {
+    init(_ popover: NSPopover) {
         statusBar = NSStatusBar.init()
         statusItem = statusBar.statusItem(withLength: 28.0)
         statusBarButton = statusItem.button!
@@ -33,34 +31,26 @@ class StatusBarController
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown], handler: mouseEventHandler)
     }
     
-    @objc func togglePopover(sender: AnyObject)
-    {
-        if(popover.isShown)
-        {
+    @objc func togglePopover(sender: AnyObject) {
+        if(popover.isShown) {
             hidePopover(sender)
-        }
-        else
-        {
+        } else {
             showPopover(sender)
         }
     }
     
-    func showPopover(_ sender: AnyObject)
-    {
+    func showPopover(_ sender: AnyObject) {
         popover.show(relativeTo: statusBarButton.bounds, of: statusBarButton, preferredEdge: NSRectEdge.maxY)
         eventMonitor?.start()
     }
     
-    func hidePopover(_ sender: AnyObject)
-    {
+    func hidePopover(_ sender: AnyObject) {
         popover.performClose(sender)
         eventMonitor?.stop()
     }
     
-    func mouseEventHandler(_ event: NSEvent?)
-    {
-        if(popover.isShown)
-        {
+    func mouseEventHandler(_ event: NSEvent?) {
+        if(popover.isShown) {
             hidePopover(event!)
         }
     }
