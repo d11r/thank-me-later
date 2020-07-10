@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA8608A24B8F2A300335DA7 /* FrequentBreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8608924B8F2A300335DA7 /* FrequentBreaksView.swift */; };
 		A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6233237AF87000A2BA73 /* AppDelegate.swift */; };
 		A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6235237AF87000A2BA73 /* ContentView.swift */; };
 		A70B6238237AF87700A2BA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70B6237237AF87700A2BA73 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CA8608924B8F2A300335DA7 /* FrequentBreaksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentBreaksView.swift; sourceTree = "<group>"; };
 		A70B6230237AF87000A2BA73 /* ThankMeLater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThankMeLater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70B6233237AF87000A2BA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70B6235237AF87000A2BA73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA8608B24B8F56D00335DA7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A70B6227237AF87000A2BA73 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +101,9 @@
 		A70B6253237B081200A2BA73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2CA8608B24B8F56D00335DA7 /* Components */,
 				A70B6235237AF87000A2BA73 /* ContentView.swift */,
+				2CA8608924B8F2A300335DA7 /* FrequentBreaksView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 			files = (
 				A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */,
 				A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */,
+				2CA8608A24B8F2A300335DA7 /* FrequentBreaksView.swift in Sources */,
 				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
 				A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */,
 				A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */,

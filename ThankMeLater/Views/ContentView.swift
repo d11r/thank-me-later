@@ -15,8 +15,8 @@ struct ContentView: View {
     private let rectCornerRadius: CGFloat = 15.0
     
     // Window settings
-    private let windowWidth: CGFloat = 360.0
-    private let windowHeight: CGFloat = 360.0
+    private let windowWidth: CGFloat = 300.0
+    private let windowHeight: CGFloat = 300.0
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -27,7 +27,7 @@ struct ContentView: View {
                         .lineSpacing(2)
                         .padding(10)
                     
-                    Text("content for R1")
+                    FrequentBreaksView()
                 }
                 
                 ZStack {
@@ -36,7 +36,20 @@ struct ContentView: View {
                         .lineSpacing(2)
                         .padding(10)
                     
-                    Text("content for R2")
+                    Text("Reminder for eye care")
+                        .padding()
+                }
+            }
+            
+            HStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
+                        .fill(Color.gray.opacity(rectOpacity))
+                        .lineSpacing(2)
+                        .padding(10)
+                        
+                    Text("Reminder for hand excercises")
+                        .padding()
                 }
             }
             
@@ -48,8 +61,9 @@ struct ContentView: View {
             }
             .frame(width: self.windowWidth, alignment: .center)
         }
-        .padding(0)
         .frame(width: self.windowWidth, height: self.windowHeight, alignment: .top)
+        .padding(10)
+        .background(Color.gray.opacity(0.01))
     }
 }
 
