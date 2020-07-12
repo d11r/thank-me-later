@@ -55,7 +55,7 @@ struct ContentView: View {
             }
         }
         .frame(width: self.windowWidth, height: self.windowHeight, alignment: .top)
-        .background(Color.bg)
+        .background(Color.bg.opacity(0.2))
     }
 }
 
