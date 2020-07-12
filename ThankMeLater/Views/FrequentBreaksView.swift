@@ -9,30 +9,11 @@
 import SwiftUI
 
 struct FrequentBreaksView: View {
+    @State private var isPlusPressed: Bool = false
+    
     var body: some View {
         VStack {
-            Text("Break reminder")
-                .font(.headline)
             
-            HStack {
-                Text("25")
-                    .font(.title)
-                
-                Text("min")
-                    .padding(.leading, -5)
-                    .padding(.top, 5)
-                
-                Button(action: {}) {
-                    Text("+")
-                        .font(.headline)
-                }
-            }
-            
-            HStack {
-                Button(action: {}) {
-                    Text("take a break")
-                }
-            }
         }
         .padding()
     }

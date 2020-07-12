@@ -23,18 +23,20 @@ struct ContentView: View {
             HStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
-                        .fill(Color.gray.opacity(rectOpacity))
-                        .lineSpacing(2)
-                        .padding(10)
+                        .fill(Color.rectBg)
+                        .padding(.leading, 10)
+                        .padding(.trailing, 1)
+                        .padding(.top, 10)
                     
                     FrequentBreaksView()
                 }
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
-                        .fill(Color.gray.opacity(rectOpacity))
-                        .lineSpacing(2)
-                        .padding(10)
+                        .fill(Color.rectBg)
+                        .padding(.trailing, 10)
+                        .padding(.leading, 1)
+                        .padding(.top, 10)
                     
                     Text("Reminder for eye care")
                         .padding()
@@ -44,26 +46,16 @@ struct ContentView: View {
             HStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
-                        .fill(Color.gray.opacity(rectOpacity))
-                        .lineSpacing(2)
-                        .padding(10)
+                        .fill(Color.rectBg)
+                        .padding(.all, 10)
                         
                     Text("Reminder for hand excercises")
                         .padding()
                 }
             }
-            
-            HStack {
-                Text("btw. thank me later!")
-                    .font(.footnote)
-                    .foregroundColor(.gray)
-                    .italic()
-            }
-            .frame(width: self.windowWidth, alignment: .center)
         }
         .frame(width: self.windowWidth, height: self.windowHeight, alignment: .top)
-        .padding(10)
-        .background(Color.gray.opacity(0.01))
+        .background(Color.bg)
     }
 }
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2CA8608A24B8F2A300335DA7 /* FrequentBreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8608924B8F2A300335DA7 /* FrequentBreaksView.swift */; };
+		2CA8609224BB4DF600335DA7 /* ColorChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8609124BB4DF600335DA7 /* ColorChanges.swift */; };
+		2CA8609424BB51F900335DA7 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8609324BB51F900335DA7 /* Credits.swift */; };
+		2CA8609724BB53ED00335DA7 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8609624BB53EC00335DA7 /* ButtonStyle.swift */; };
 		A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6233237AF87000A2BA73 /* AppDelegate.swift */; };
 		A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6235237AF87000A2BA73 /* ContentView.swift */; };
 		A70B6238237AF87700A2BA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70B6237237AF87700A2BA73 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		2CA8608924B8F2A300335DA7 /* FrequentBreaksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentBreaksView.swift; sourceTree = "<group>"; };
+		2CA8609124BB4DF600335DA7 /* ColorChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChanges.swift; sourceTree = "<group>"; };
+		2CA8609324BB51F900335DA7 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		2CA8609624BB53EC00335DA7 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		A70B6230237AF87000A2BA73 /* ThankMeLater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThankMeLater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70B6233237AF87000A2BA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70B6235237AF87000A2BA73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,8 +52,18 @@
 		2CA8608B24B8F56D00335DA7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2CA8609324BB51F900335DA7 /* Credits.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2CA8608E24BB4C4100335DA7 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				2CA8609124BB4DF600335DA7 /* ColorChanges.swift */,
+				2CA8609624BB53EC00335DA7 /* ButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		A70B6227237AF87000A2BA73 = {
@@ -101,6 +117,7 @@
 		A70B6253237B081200A2BA73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2CA8608E24BB4C4100335DA7 /* Styles */,
 				2CA8608B24B8F56D00335DA7 /* Components */,
 				A70B6235237AF87000A2BA73 /* ContentView.swift */,
 				2CA8608924B8F2A300335DA7 /* FrequentBreaksView.swift */,
@@ -182,8 +199,11 @@
 				A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */,
 				A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */,
 				2CA8608A24B8F2A300335DA7 /* FrequentBreaksView.swift in Sources */,
+				2CA8609224BB4DF600335DA7 /* ColorChanges.swift in Sources */,
+				2CA8609724BB53ED00335DA7 /* ButtonStyle.swift in Sources */,
 				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
 				A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */,
+				2CA8609424BB51F900335DA7 /* Credits.swift in Sources */,
 				A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
