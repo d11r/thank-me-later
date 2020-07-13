@@ -10,52 +10,59 @@ import SwiftUI
 import AppKit
 
 struct ContentView: View {
-    // Rectangle settings
-    private let rectOpacity = 0.07
-    private let rectCornerRadius: CGFloat = 15.0
     
-    // Window settings
-    private let windowWidth: CGFloat = 300.0
-    private let windowHeight: CGFloat = 300.0
+    @State private var eyecareEnabled = true
+    @State private var handcareEnabled = true
+    @State private var breaksEnabled = true
+    
+    @State var currentDate = Date()
+    @State var timeRemaining = 63
+    
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            HStack {
-                ZStack {
-                    RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
-                        .fill(Color.rectBg)
-                        .padding(.leading, 10)
-                        .padding(.trailing, 1)
-                        .padding(.top, 10)
-                    
-                    FrequentBreaksView()
-                }
-                
-                ZStack {
-                    RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
-                        .fill(Color.rectBg)
-                        .padding(.trailing, 10)
-                        .padding(.leading, 1)
-                        .padding(.top, 10)
-                    
-                    Text("Reminder for eye care")
-                        .padding()
+        VStack {
+            VStack {
+                HStack {
+                    Text("Eyesight protection")
+                        .font(.headline)
+                    Spacer()
+                    Toggle(isOn: $eyecareEnabled) {}
+                        .toggleStyle(SwitchToggleStyle())
                 }
             }
             
+            Divider()
+            
             HStack {
-                ZStack {
-                    RoundedRectangle(cornerRadius: rectCornerRadius, style: .continuous)
-                        .fill(Color.rectBg)
-                        .padding(.all, 10)
-                        
-                    Text("Reminder for hand excercises")
-                        .padding()
-                }
+                Text("Hand & Wrist protection")
+                    .font(.headline)
+                Spacer()
+                Toggle(isOn: $handcareEnabled) {}
+                    .toggleStyle(SwitchToggleStyle())
+            }
+            
+            Divider()
+            
+            HStack {
+                Text("Take scheduled breaks")
+                    .font(.headline)
+                Spacer()
+                Toggle(isOn: $breaksEnabled) {}
+                    .toggleStyle(SwitchToggleStyle())
             }
         }
-        .frame(width: self.windowWidth, height: self.windowHeight, alignment: .top)
-        .background(Color.bg.opacity(0.2))
+        .padding()
+    }
+    
+    private func getTimeLeft(timeLeft: Int) -> String {
+        let minutes = timeLeft / 60
+        let seconds = timeLeft % 60
+        
+        let minuteString = minutes < 10 ? "0\(minutes)" : "\(minutes)"
+        let secondString = seconds < 10 ? "0\(seconds)" : "\(seconds)"
+        
+        return "\(minuteString):\(secondString)"
     }
 }
 
@@ -63,5 +70,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            
     }
 }
