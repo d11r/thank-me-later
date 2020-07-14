@@ -11,9 +11,9 @@ import AppKit
 
 struct ContentView: View {
     
-    @State private var eyecareEnabled = true
-    @State private var handcareEnabled = true
-    @State private var breaksEnabled = true
+    @State private var eyecareEnabled = false
+    @State private var handcareEnabled = false
+    @State private var breaksEnabled = false
     
     @State var currentDate = Date()
     @State var timeRemaining = 63
@@ -45,11 +45,29 @@ struct ContentView: View {
             Divider()
             
             HStack {
-                Text("Take scheduled breaks")
+                Text("Take occasional breaks")
                     .font(.headline)
                 Spacer()
                 Toggle(isOn: $breaksEnabled) {}
                     .toggleStyle(SwitchToggleStyle())
+            }
+            
+            Divider()
+            
+            HStack {
+                Button(action: {}) {
+                    Image(systemName: "gear")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(Color.secondary)
+                }
+                    .buttonStyle(PlainButtonStyle())
+                
+                Spacer()
+                
+                Button(action: {}) {
+                    Text("Open Thank me Later")
+                }
             }
         }
         .padding()
@@ -70,6 +88,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            
     }
 }

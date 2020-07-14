@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C80226824BD0DB500CAF363 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C80226724BD0DB400CAF363 /* WidgetKit.framework */; };
+		2C80226A24BD0DB500CAF363 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C80226924BD0DB500CAF363 /* SwiftUI.framework */; };
+		2C80226D24BD0DB500CAF363 /* HandExcercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C80226C24BD0DB500CAF363 /* HandExcercises.swift */; };
+		2C80227024BD0DB600CAF363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C80226F24BD0DB600CAF363 /* Assets.xcassets */; };
+		2C80227324BD0DB600CAF363 /* HandExcercises.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2C80226E24BD0DB500CAF363 /* HandExcercises.intentdefinition */; };
+		2C80227424BD0DB600CAF363 /* HandExcercises.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2C80226E24BD0DB500CAF363 /* HandExcercises.intentdefinition */; };
+		2C80227724BD0DB600CAF363 /* HandExcercisesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C80226524BD0DB400CAF363 /* HandExcercisesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2CA8609424BB51F900335DA7 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8609324BB51F900335DA7 /* Credits.swift */; };
 		A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6233237AF87000A2BA73 /* AppDelegate.swift */; };
 		A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6235237AF87000A2BA73 /* ContentView.swift */; };
@@ -18,7 +25,39 @@
 		A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6251237B078200A2BA73 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2C80227524BD0DB600CAF363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A70B6228237AF87000A2BA73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C80226424BD0DB400CAF363;
+			remoteInfo = HandExcercisesExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C80227B24BD0DB600CAF363 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2C80227724BD0DB600CAF363 /* HandExcercisesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2C80226524BD0DB400CAF363 /* HandExcercisesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HandExcercisesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C80226724BD0DB400CAF363 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2C80226924BD0DB500CAF363 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2C80226C24BD0DB500CAF363 /* HandExcercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandExcercises.swift; sourceTree = "<group>"; };
+		2C80226E24BD0DB500CAF363 /* HandExcercises.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HandExcercises.intentdefinition; sourceTree = "<group>"; };
+		2C80226F24BD0DB600CAF363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C80227124BD0DB600CAF363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C80227224BD0DB600CAF363 /* HandExcercises.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HandExcercises.entitlements; sourceTree = "<group>"; };
 		2CA8609324BB51F900335DA7 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
 		A70B6230237AF87000A2BA73 /* ThankMeLater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThankMeLater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70B6233237AF87000A2BA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +72,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C80226224BD0DB400CAF363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C80226A24BD0DB500CAF363 /* SwiftUI.framework in Frameworks */,
+				2C80226824BD0DB500CAF363 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A70B622D237AF87000A2BA73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +91,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C80226624BD0DB400CAF363 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C80226724BD0DB400CAF363 /* WidgetKit.framework */,
+				2C80226924BD0DB500CAF363 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C80226B24BD0DB500CAF363 /* HandExcercises */ = {
+			isa = PBXGroup;
+			children = (
+				2C80226C24BD0DB500CAF363 /* HandExcercises.swift */,
+				2C80226E24BD0DB500CAF363 /* HandExcercises.intentdefinition */,
+				2C80226F24BD0DB600CAF363 /* Assets.xcassets */,
+				2C80227124BD0DB600CAF363 /* Info.plist */,
+				2C80227224BD0DB600CAF363 /* HandExcercises.entitlements */,
+			);
+			path = HandExcercises;
+			sourceTree = "<group>";
+		};
 		2CA8608B24B8F56D00335DA7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				A70B6232237AF87000A2BA73 /* ThankMeLater */,
+				2C80226B24BD0DB500CAF363 /* HandExcercises */,
+				2C80226624BD0DB400CAF363 /* Frameworks */,
 				A70B6231237AF87000A2BA73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A70B6230237AF87000A2BA73 /* ThankMeLater.app */,
+				2C80226524BD0DB400CAF363 /* HandExcercisesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +191,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C80226424BD0DB400CAF363 /* HandExcercisesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C80227824BD0DB600CAF363 /* Build configuration list for PBXNativeTarget "HandExcercisesExtension" */;
+			buildPhases = (
+				2C80226124BD0DB400CAF363 /* Sources */,
+				2C80226224BD0DB400CAF363 /* Frameworks */,
+				2C80226324BD0DB400CAF363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandExcercisesExtension;
+			productName = HandExcercisesExtension;
+			productReference = 2C80226524BD0DB400CAF363 /* HandExcercisesExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A70B622F237AF87000A2BA73 /* ThankMeLater */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A70B6243237AF87700A2BA73 /* Build configuration list for PBXNativeTarget "ThankMeLater" */;
@@ -126,10 +215,12 @@
 				A70B622C237AF87000A2BA73 /* Sources */,
 				A70B622D237AF87000A2BA73 /* Frameworks */,
 				A70B622E237AF87000A2BA73 /* Resources */,
+				2C80227B24BD0DB600CAF363 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2C80227624BD0DB600CAF363 /* PBXTargetDependency */,
 			);
 			name = ThankMeLater;
 			productName = Ambar;
@@ -142,10 +233,13 @@
 		A70B6228237AF87000A2BA73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Golden Chopper";
 				TargetAttributes = {
+					2C80226424BD0DB400CAF363 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					A70B622F237AF87000A2BA73 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -165,11 +259,20 @@
 			projectRoot = "";
 			targets = (
 				A70B622F237AF87000A2BA73 /* ThankMeLater */,
+				2C80226424BD0DB400CAF363 /* HandExcercisesExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C80226324BD0DB400CAF363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C80227024BD0DB600CAF363 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A70B622E237AF87000A2BA73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,10 +286,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C80226124BD0DB400CAF363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C80226D24BD0DB500CAF363 /* HandExcercises.swift in Sources */,
+				2C80227324BD0DB600CAF363 /* HandExcercises.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A70B622C237AF87000A2BA73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C80227424BD0DB600CAF363 /* HandExcercises.intentdefinition in Sources */,
 				A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */,
 				A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */,
 				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
@@ -197,6 +310,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C80227624BD0DB600CAF363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C80226424BD0DB400CAF363 /* HandExcercisesExtension */;
+			targetProxy = 2C80227524BD0DB600CAF363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A70B623C237AF87700A2BA73 /* Main.storyboard */ = {
@@ -210,6 +331,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2C80227924BD0DB600CAF363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HandExcercises/HandExcercises.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AR494XTABA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = HandExcercises/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.d11r.thank-me-later.HandExcercises";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2C80227A24BD0DB600CAF363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HandExcercises/HandExcercises.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AR494XTABA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = HandExcercises/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.d11r.thank-me-later.HandExcercises";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A70B6241237AF87700A2BA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,6 +497,7 @@
 		A70B6244237AF87700A2BA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ThankMeLater/ThankMeLater.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -352,6 +522,7 @@
 		A70B6245237AF87700A2BA73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ThankMeLater/ThankMeLater.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -376,6 +547,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C80227824BD0DB600CAF363 /* Build configuration list for PBXNativeTarget "HandExcercisesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C80227924BD0DB600CAF363 /* Debug */,
+				2C80227A24BD0DB600CAF363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A70B622B237AF87000A2BA73 /* Build configuration list for PBXProject "ThankMeLater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
